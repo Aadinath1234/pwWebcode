@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors </title>
+    <style>
+      *{
+           margin: 0;
+           padding: 0;    
+        }
+
+        h1{
+            background-color: rgb(66, 227, 227);
+        }
+
+        .bg-orange{
+            background-color: rgb(227, 110, 20);
+        }
+
+        #bg-green{
+            background-color: green;
+        }
+
+      a[target="_blank"]{
+        background-color: blueviolet;
+        color: white;
+      }
+      a[target="_parent"]{
+        background-color: brown;
+        color: white;
+      }
+      /* by this way we are selecting the anchor tag on the basis of its target which can be _blank or _parent.   */
+
+
+
+
+      h4,h5,h6{
+        background-color: rgb(19, 179, 80);
+      }
+        
+      ul li{
+        background-color: rgb(238, 241, 36);
+      }
+
+      header > a{
+        background-color: blue;
+        color:white;
+      }
+      
+      header nav ul  a{
+        background-color: black;
+        color: white;
+      }
+
+      div img~p{
+        background-color: rgb(29, 206, 70);
+        color: black;
+      }
+      div div img+p{
+        background-color: rgb(239, 24, 168);
+        color: white;
+      }
+      /* this is used for the adjacent siblings  */
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, odio.</h1>
+    <h2 class="bg-orange">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, soluta?</h2>
+
+    <h3 class="bg-orange" id="bg-green" >here the preference of the id is more than the class . </h3>
+
+    <a href="http:/google.com" target="_blank"> www.google.com</a>
+    <a href="http:/ineuron.com" target="_parent"> www.ineuron.com</a>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, hic.</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, placeat.</h5>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, velit.</h6>
+     
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <li>four </li>
+
+
+
+    <header>
+        <a href="http/google.com">google</a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <a href="#">Logo</a>
+            </ul>
+        </nav>
+        <a href="http/amazon.com">amazon</a>
+
+    </header>
+
+    <div>
+        <img src="" alt="this is an image tag">
+        <p>Sibling of img tag in this div section</p>
+        <div>
+          <img src="" alt="this is image">
+            <p>this tag will not change its property as the upper p tag </p>
+            <p>this p tag will not selected because it is not adjacent to img tag </p>
+        </div>
+
+
+    </div>
+
+    
+
+    
+    
+</body>
+</html>
