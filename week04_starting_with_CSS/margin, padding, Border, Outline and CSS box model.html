@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin </title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .elem1{
+            background-color: rgb(179, 41, 41);
+            color: white;
+            /* margin: 10px 20px 30px 40px ; */
+            margin: 20px 30px;
+            /* 20 for top-bottom and 30 for left-right.  */
+            /* top right bottom left  */
+            /* if margin: 10px 20px 30px 
+               at that time 10 is for top 20 is for right and left , 30 is for bottom. */
+               /* margin: 10px then it is for top bottom left and right. */
+               /* margin: 10px 20px  it is for top bottom and left-right */
+               /* margin-top: 20px;
+                   margin-bottom: 30px;
+                    margin-left: 10px;
+                     margin-right: 40px;
+                      */
+                      /* padding also have the same property as the margin */
+
+
+        }
+
+        .one{
+            border-style: solid;
+            border-width: thick;
+            /* or it can be written as the border-width: 20px ; */
+        }
+        .two{
+            border-style: dashed;
+
+        }
+        .three{
+            border-style: dotted;
+        }
+        .four{
+            border-style: double;
+        }
+        .five{
+            border-style: groove;
+        }
+        .six{
+            border-style: ridge;
+            border-top-width: 20px;
+            border-bottom-width: 4px;
+            border-left-width: 2px;
+            border-right-width:10px;
+            border-color: brown;
+            border-radius: 4px;
+        }
+        .seven{
+            border-style:outset ;
+            outline-style: solid;
+            outline-width: medium;
+            outline-offset: 10px;
+            outline-color: blueviolet;
+        }
+        .eight{
+            border-style: inset;
+        }
+        .nine{
+            border-style: dashed dotted solid inset;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="elem1">
+         element 1 
+    </div>
+    <div class="elem2">element 2</div>
+    <div class="elem3">element 3</div>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quod numquam </h1>
+
+
+    <nav>
+        <ul>
+        <li class="one">1</li><br>
+        <li class="two">2</li><br>
+        <li class="three">3</li><br>
+        <li class="four">4</li><br>
+        <li class="five">5</li><br>
+        <li class="six">6</li><br>
+        <li class="seven">7</li><br>
+        <li class="eight">8</li><br>
+        <li class="nine">9</li>
+    </ul>
+    </nav>
+</body>
+</html>

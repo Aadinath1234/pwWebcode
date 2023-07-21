@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance_selectors: pseudoselectors.</title>
+    <style>
+        h1:hover{
+            background-color: aqua;
+        }
+        button:focus{
+            background-color: black;
+        }
+        input:disabled{
+            background-color: rgb(134, 136, 131);
+        }
+
+        div:first-child{
+            background-color: blue;
+        }
+
+        div:last-child{
+            background-color: brown;
+
+        }
+
+        div:nth-child(3n){
+            background-color: rgb(46, 190, 222);
+        }
+        /* n is for first element and 2n is for second element , 3n is for the third element.  */
+
+
+        /* special pseudo selectors  */
+         h1::after{
+            content: "after!";
+            color: aqua;
+         }
+
+         h1::before{
+            content: "before!";
+            color: rgb(226, 32, 181);
+         }
+
+         p::first-letter{
+            background-color: burlywood;
+            font-size: 200px;
+         }
+
+         
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <button>submit</button>
+    <input type="text" disabled="true">
+
+
+    <div>
+        <div>
+            One
+        </div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+
+    <h1>special type of pseudoselectors </h1>
+    <p>here we will perform pseudoselectors. on this paragraph on its first letter and on its first word. </p>
+
+</body>
+</html>
